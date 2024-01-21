@@ -23,7 +23,7 @@ Link to mymedia: ![MyMedia](MyMedia.md)
 # TedX Talks
 ###### I frequently watch tedx talks and they are my go-to videos.If I had to recommend someone to try I would tell them to watch below 4 videos:
 
- |###Title of Video|###Reason|###Creator Name|
+ |Title of Video|Reason|Creator Name|
  |---|---|---|
  |It is okay not to have a plan|It's about passion and learning along the way|Mithila Palkar|
  |Live for yourself|Need to love yourself before loving others as none of those very people are gonna pay your bills, thus eradicating the need to impress others|Chetan Bhagat|
