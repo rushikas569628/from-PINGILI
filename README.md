@@ -10,3 +10,8 @@ I like **Ambience** and when it comes to **food** egg noodles is my favorite
 1. Egg fried Rice
 2. Biryani
 3. chowmein
+
+### Places to visit near Restaurant:
+* Park
+* library
+* Galleria Showroom
