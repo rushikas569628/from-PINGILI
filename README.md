@@ -43,39 +43,26 @@ Link to mymedia: ![MyMedia](MyMedia.md)
 ---
 
 ## Code Fencing
-Singleton class structure in Dart to ensure only one instance of a class is created.
+
+Finding intersection of lists using Dart-9
+
 <https://code.pieces.app/collections/dart>
+
 ```
-class SingletonClass {
-  static final SingletonClass _instance = SingletonClass._internal();
+main() {
+  final lists = [
+    [1, 2, 3, 55, 7, 99, 21],
+    [1, 4, 7, 65, 99, 20, 21],
+    [0, 2, 6, 7, 21, 99, 26]
+  ];
 
-  factory SingletonClass() {
-    return _instance;
-  }
+  final commonElements =
+      lists.fold(
+        lists.first.toSet(), 
+        (a, b) => a.intersection(b.toSet()));
 
-  SingletonClass._internal();
-
-  String property1 = 'Default Property 1';
-  String property2 = 'Default Property 2';
+  print(commonElements);
 }
 
-/// Example consuming the singleton class and accessing/manipulating properties
-/// To evaluate the difference between a normal class and a singleton class, comment
-/// out the factory constructor and _instance in SingletonClass and re-run.
-void main() {
-  /// Properties before
-  String property1Before = SingletonClass().property1;
-  String property2Before = SingletonClass().property2;
 
-  print('property1Before: $property1Before'); // Default Property 1
-  print('property2Before: $property2Before'); // Default Property 2
-
-  /// Updating the properties
-  SingletonClass().property1 = 'Updated Property 1';
-  SingletonClass().property2 = 'Updated Property 2';
-
-  /// Properties after
-  print('property1After: ${SingletonClass().property1}'); // Updated Property 1
-  print('property2After: ${SingletonClass().property2}'); // Updated Property 2
-}
 ```
